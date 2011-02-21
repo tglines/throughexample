@@ -11,5 +11,14 @@ div.center{
   position:relative;
 }
 
+div.header{
+  padding-top:30px;
+}
 
+h2{
+  color:#FFFFFF;
+}
 
+p{
+  color:#BBBBBB;
+}

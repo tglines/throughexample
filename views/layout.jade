@@ -2,6 +2,12 @@
 html(lang="en")
   head
     title= title
+    link(rel='stylesheet',type='text/css',href='/css/style.css')
   body
+    div.center
+      div.header
+        a.logo(href='/')
+          img(src='/img/txt.png')
+        a.nav(href='#about') About
     div.center
       != body
