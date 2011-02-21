@@ -1,0 +1,15 @@
+body{
+  font-family: Arial, Verdana, sans-serif;
+  min-width:1020px;
+  background-image: url('/img/bg.png');
+}
+
+div.center{
+  width:1000px;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+}
+
+
+
