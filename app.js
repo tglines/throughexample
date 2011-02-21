@@ -22,9 +22,7 @@ auth = require('connect-auth')
 
 mongoStore = require('connect-mongodb');
 
-fbId = "131851053550620";
-fbSecret = "my_fb_app_secret_goes_here";
-fbCallbackAddress = 'http://www.throughexample.com/auth/facebook';
+require('./secret_facebook_stuff.js');
 
 app.configure(function(){
   app.set('views', __dirname + '/views');
@@ -64,7 +62,7 @@ loadAccount = function(req,callback){
       if(account){
         loadCallback(account);
       }
-      else if (fb_details.user.id == "11018116"){
+      else if (fb_details.user.id == trav_id){
         var n = new Account();
         n.email = fb_details.user.email;
         n.username = 'travis';
